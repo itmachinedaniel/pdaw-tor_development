@@ -2,6 +2,10 @@ p {
     margin: 0;
 }
 
+p.gowhite {
+    color: whitesmoke;
+}
+
 h1 {
     margin: 0;
 }
@@ -68,10 +72,6 @@ div#logointrod p#fazeup {
     font-size: 14px;
 }
 
-div#pagedisplay {
-    
-}
-
 div#pagedisplay p {
     color: white;
     font-size: 20px;
@@ -131,8 +131,9 @@ div#hdr124 {
     height: 25px;
 }
 
-div#hdr124 i {
+div#hdr124 a {
     color: white;
+    text-decoration: none;
 }
 
 
@@ -142,7 +143,6 @@ div#hdr124 i {
 section#hero1 {
     height: 1200px;
     width: 1300px;
-    background-color: gray;
     padding: 8px;
     margin: 0 auto;
 }
@@ -155,7 +155,6 @@ section#hero1 div#divmain1 {
 div#div11 {
     width: 100%;
     height: 72%;
-    background-color: red;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -165,7 +164,6 @@ div#div11 {
 div#div11 div#div111 {
     height: 100%;
     width: 17%;
-    background-color: blue;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -177,6 +175,11 @@ div#div1111 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+div#div1111 p {
+    color: rgb(212, 212, 212);
+    font-size: 20px;
 }
 
 div#div1112 {
@@ -203,7 +206,8 @@ div#img_see_more a {
 }
 
 div#img_see_more a img {
-
+    position: relative;
+    left: 10px;
 }
 
 div#see_more_text {
@@ -212,7 +216,11 @@ div#see_more_text {
     padding: 10px;
 }
 
-div#see_more_text p {
+div#see_more_text a {
+    text-decoration: none;
+}
+
+div#see_more_text a p {
     color: white;
     font-size: 16px;
     text-align: center;
@@ -221,7 +229,6 @@ div#see_more_text p {
 div#div11 div#div112 {
     height: 100%;
     width: 66%;
-    background-color: green;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -232,6 +239,72 @@ div#upcom_matches {
     width: 100%;
     height: 11%;
     background: linear-gradient(to right,  rgb(75,0,0) 51%,rgb(177,0,0) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div#upcom_mat_desc {
+    height: 100%;
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#upcom_mat_desc p {
+    font-size: 18px;
+    margin: 5px;
+    height: auto;
+    text-align: center;
+}
+
+div#upcom_mat_showcase {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#upcom_mat_img {
+    display: none;
+}
+
+div#who_vs_who {
+    display: none;
+}
+
+div#upcom_mat_showcase img {
+    height: auto;
+    width: 100%;
+    box-shadow: 0px 0px 10px 4px rgb(254, 254, 254);
+}
+
+div#upcom_mat_timer {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#upcom_mat_timer p {
+    font-size: 18px;
+    text-align: center;
+}
+
+div#upcom_mat_event {
+    height: 100%;
+    width: 26%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#upcom_mat_event p {
+    text-align: center;
+    font-size: 18px;
 }
 
 div#latest_activity {
@@ -261,7 +334,7 @@ div#lat_act_sign p {
 div#news_page {
     width: 100% auto;
     height: 86%;
-    padding: 12px;
+    padding: 10px;
 }
 
 div#news_a {
@@ -338,12 +411,24 @@ div#next_news_pag {
     width: 100%;
     height: 6%;
     background: linear-gradient(to right, rgb(46,41,41) 19%,rgb(70,0,0) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
 }
+
+div#next_news_pag a {
+    height: 12px;
+    width: 12px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
 
 div#div11 div#div113 {
     height: 100%;
     width: 17%;
-    background-color: blue;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -355,6 +440,11 @@ div#div1131 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+div#div1131 p {
+    color: rgb(212, 212, 212);
+    font-size: 20px;
 }
 
 div#div1132 {
@@ -402,10 +492,159 @@ div#forum_text_thr p {
 
 
 div#div12 {
-    width: 100%;
-    height: 28%;
-    background-color: yellow;
+    width: 100% auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
 }
+
+div#div12 div#div121 {
+    height: 200px;
+    width: 45%;
+    background: linear-gradient(to bottom,  rgb(80,0,0) 0%,rgb(84,2,2) 100%);
+    border-radius: 5px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+div#textbox_seemore {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+div#textbox_seemore a {
+    color: whitesmoke;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+div#div1211 {
+    width: 100% auto;
+    height: 84%;
+    background-color: brown;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+div.rightgradient {
+    background: linear-gradient(to right,  rgb(89,5,5) 0%,rgb(49,0,0) 31%);
+}
+
+div.leftgradient {
+    background: linear-gradient(to left,  rgb(89,5,5) 0%,rgb(49,0,0) 31%);
+}
+
+a#forum_trend_cont_a {
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 15% 82%;
+    text-decoration: none;
+    gap: 3%;
+}
+
+div#trend_news_date {
+    width: 100%;
+    height: 30px;
+    background-color: #2D0404;
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#trend_news_desc {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+
+div#trend_news_desc p {
+    height: auto;
+    max-height: 40px;
+    overflow: hidden;
+    color: white;
+    line-height: 1.3;
+}
+
+a#forum_trend_cont_b {
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 8% 72% 18%;
+    text-decoration: none;
+    gap: 5px;
+}
+
+div.rightgradient a#forum_trend_cont_a:hover {
+    background: linear-gradient(to right,  rgb(65,0,0) 0%,rgb(37,0,0) 31%);
+}
+
+div.leftgradient a#forum_trend_cont_b:hover {
+    background: linear-gradient(to left,  rgb(65,0,0) 0%,rgb(37,0,0) 31%);
+}
+
+div#forum_type_reserve {
+    width: 22px;
+    height: 22px;
+    border-radius: 8px;
+    margin: auto;
+}
+
+div.forum_type_colour_a {
+    background-color: blue;
+}
+
+div.forum_type_colour_b {
+    background-color: red;
+}
+
+div.forum_type_colour_c {
+    background-color: orange;
+}
+
+div#text_forum_thread {
+    display: flex;
+    align-items: center;
+}
+
+div#text_forum_thread p {
+    color: whitesmoke;
+    font-size: 16px;
+    width: 360px;
+    height: auto;
+    max-height: 35px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+div#upvotes_trend {
+    height: 30px;
+    width: 80px;
+    background-color: #600101;
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#upvotes_trend {
+    color: whitesmoke;
+}
+
 
 
 
